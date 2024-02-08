@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form1</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        Name:<br>
+        <label>First name:</label><br>
+        <input type="text" name="firstname" value="first name">
+        <br>
+        last name:<br>
+        <input type="text" name="lastname" value="last name">
+        <br><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" id="o" name="gender" value="others">
+        <label for="o">Others</label><br><br>
+        State:<br>
+        <input list="states" name="state">
+        <datalist id="states">
+            <option value="Karnataka"></option>
+            <option value="Maharashtra"></option>
+            <option value="Delhi"></option>
+            <option value="Tamil Nadu"></option>
+            <option value="Telangana"></option>
+            <option value="Goa"></option>
+        </datalist><br><br>
+        Hobbies:<br>
+        <input type="checkbox" name="hobbies" value="sing">Singing<br>
+        <input type="checkbox" name="hobbies" value="dance">Dancing<br>
+        <input type="checkbox" name="hobbies" value="code">Coding<br><br>
+        Food Preference:<br>
+        <select name="Food Preference">
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-veg</option>
+        </select><br><br>
+        <select name="Food Preference" size="2">
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-veg</option>
+        </select><br><br>
+        <select name="Food Preference" size="2" multiple>
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non-veg</option>
+        </select><br><br>
+        Address:<br>
+        <textarea  name="address" rows="3" cols="20">Enter your address.
+        </textarea><br><br>
+        Password:<br>
+        <input type="password" name="psw">
+    </fieldset>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" onclick="alert('Your form has been cleared sucessefully')" value="Clear">
+      
+
+    </form>
+   
+</body>
+</html>
